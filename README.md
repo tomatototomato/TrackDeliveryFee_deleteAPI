@@ -18,7 +18,7 @@
   - GoogleSpreadSheetAPIから運賃表を取得。
   - あとは計算でいろいろして概算運送費をだしています。
 
-- 使用したAPI
+- 使用したAPI  
   ・jp-postal-code-api  
   - 郵便番号を入力すると住所が返ってくる
   
