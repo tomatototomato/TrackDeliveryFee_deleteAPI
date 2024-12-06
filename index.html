@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>運送費算出</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <h1>運送費算出</h1>
+
+    <!-- 始点情報 -->
+    <div class="StartPoint_Container">
+
+        <h3>発送元</h3>
+        <div class="StartPoint_PostNum_Container">
+
+            <p>〒：</p>
+            <div>
+                <input  id="StartPoint_PostNum_Input_TextBox" 
+                type="text" 
+                size="25" 
+                placeholder="郵便番号７桁を入力してください">
+            </div>
+        </div>
+
+        <div class="StartPoint_AddressValue_Container">
+            <p id="StartPoint_AddressValue_Result_Label"></p>
+        </div>
+
+    </div>
+
+    <!-- 終点情報 -->
+    <div class="EndPoint_Container">
+        
+        <h3>送り先</h3>
+        <div class="EndPoint_PostNum_Container">
+
+            <p>〒：</p>
+            <div>
+                <input  id="EndPoint_PostNum_Input_TextBox" 
+                type="text" 
+                size="25" 
+                placeholder="郵便番号７桁を入力してください">
+            </div>
+        </div>
+
+        <div class="EndPoint_AddressValue_Container">
+            <p id="EndPoint_AddressValue_Result_Label"></p>
+        </div>
+    </div>
+
+    <div class="Output">
+        <div class="Button_Container">
+            <input type="button"  value="計算" id="Button_OutPut">
+            <input type="button" value="リセット" id="Button_Reset">
+        </div>
+        
+        <div class="Result_Container">
+
+            <div class="OriginAre_Container">
+                <p id="OriginAre_Title_Label">価格基準：</p>
+                <select id="OriginAre_ComboBox">
+                    <option value="kantou">関東</option>
+                    <option value="kansai">関西</option>
+                    <option value="hokkaido">北海道</option>
+                    <option value="kyushu">九州</option>
+                    <option value="hokuriku">北陸</option>
+                    <option value="chubu">中部</option>
+                    <option value="tyugoku">中国</option>
+                    <option value="sikoku">四国</option>
+                </select>
+            </div>
+
+            <div class="TrackSize_Container">
+                <p id="TrackSize_Title_Label">トラックの大きさ：</p>
+                <select id="TrackSize_ComboBox">
+                    <option value=1>2tクラス</option>
+                    <option value=2>4tクラス</option>
+                    <option value=3>10tクラス</option>
+                    <option value=4>20tクラス</option>
+                </select>
+            </div>
+
+            <div class="DistanceValue_Container">
+                <p id="DistanceValue_Title_Label">概算走行距離：</p>
+                <p id="DistanceValue_Value_Label">－</p>
+                <p id="DistanceValue_Unit_Label">km</p>
+            </div>
+
+            <div class="DeliverCost_Container">
+                <p id="DeliverCost_Title_Label">概算運送費：</p>
+                <p id="DeliverCost_Value_Label">－</p>
+                <p id="DeliverCost_Unit_Label">円</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- jQueryの読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- main.jsの読み込み -->
+    <script src="./js/main.js"></script>
+    
+    <!-- API Keyの取得 -->
+    <script src="./js/apiKey.js"></script>
+
+</body>
+</html>
