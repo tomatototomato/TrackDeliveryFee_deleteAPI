@@ -49,7 +49,7 @@ https://tomatototomato.github.io/TrackDeliveryFee_deleteAPI/
 
 - GoogleMAP API関連でいろんなエラーが出て、苦戦しました。
 
-  私の場合、CORS policyで検証ができなくなってしまい、右往左往しました。
+  私の場合、CORS policyで検証ができなくなってしまい、右往左往しました。  
   Google chromeの拡張機能ででCORSをいじれるアドインがあったので、そちらで解決。
 
 - Google SpreadSheetではなく、実際のAPI開発もやってみたいと思いました。
@@ -57,9 +57,9 @@ https://tomatototomato.github.io/TrackDeliveryFee_deleteAPI/
 ## 質問・疑問・感想、シェアしたいこと等なんでも
 
 - [感想]
-  APIの組合せ次第では様々もモノが作れそうだと感じました。
-  情報の内容次第では、API単体だけでもマネタイズも可能だと思ったので、
-  奥が深そうな分野だとは思いますが、もっと理解を深めたいと思いました。
+  APIの組合せ次第では様々もモノが作れそうだと感じました。  
+  情報の内容次第では、API単体だけでもマネタイズも可能だと思ったので、  
+  奥が深そうな分野だとは思いますが、もっと理解を深めたいと思いました。  
 
 - [参考記事]
   - 1. [https://zenn.dev/ttskch/articles/309423d26a1aaa]
