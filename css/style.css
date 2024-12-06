@@ -1,0 +1,75 @@
+/* 始点入力欄 ----------------------------------*/
+.StartPoint_Container {
+
+    /* 幅を表示ページの25％ */
+    width: 300px;
+    /* backgroundをグレー */
+    background-color:  rgb(179, 175, 175);
+    /* 角丸に設定 */
+    border-radius: 10px;
+}
+
+.StartPoint_PostNum_Container {
+    
+    /* 表示をFlex */
+    display: flex;
+    align-items: center;
+}
+
+/* 終点入力欄 ---------------------------------- */
+.EndPoint_Container {
+
+    /* 幅を表示ページの25％ */
+    width: 300px;
+    /* backgroundをグレー */
+    background-color: rgb(179, 175, 175);
+    /* 角丸に設定 */
+    border-radius: 10px;
+}
+
+.EndPoint_PostNum_Container {
+
+    /* 表示をFlex */
+    display: flex;
+    align-items: center;
+}
+
+/* ボタン&出力 ---------------------------------- */
+.Output{
+        /* 幅を表示ページの25％ */
+        width: 300px;
+        /* backgroundをグレー */
+        background-color: rgb(151, 190, 198);
+        /* 角丸に設定 */
+        border-radius: 10px;
+
+        /* padding設定 */
+        padding-top: 10px;
+}
+
+.OriginAre_Container {
+    /* 表示をFlex */
+    display: flex;
+    align-items: center;
+}
+
+.TrackSize_Container {
+        /* 表示をFlex */
+        display: flex;
+        align-items: center;
+}
+
+
+.DistanceValue_Container{
+
+    /* 表示をFlex */
+    display: flex;
+    align-items: center;
+}
+
+.DeliverCost_Container{
+
+    /* 表示をFlex */
+    display: flex;
+    align-items: center;
+}
